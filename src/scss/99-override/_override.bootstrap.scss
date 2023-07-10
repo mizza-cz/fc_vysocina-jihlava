@@ -1,0 +1,39 @@
+/*! purgecss start ignore */
+.btn {
+  border-radius: 6px;
+  outline: none;
+  font-size: 16px;
+  line-height: 23px;
+  color: var(--color-dark);
+  background-color: var(--color-yellow);
+  text-transform: uppercase;
+  transition: all 0.3s;
+  border: 1px solid var(--color-yellow);
+  padding: 10px 16px 8px;
+  width: max-content;
+  display: block;
+  &:hover {
+    color: var(--color-yellow);
+    border: 1px solid var(--color-yellow);
+    background-color: transparent;
+  }
+}
+.btn-transparent {
+  color: var(--color-yellow);
+  border: 1px solid var(--color-yellow);
+  background-color: transparent;
+  &:hover {
+    color: var(--color-dark);
+    background-color: var(--color-yellow);
+  }
+}
+.btns {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.ml-auto {
+  margin-left: auto !important;
+}
+/*! purgecss end ignore */

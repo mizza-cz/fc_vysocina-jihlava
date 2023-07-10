@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="126px" height="104px" viewBox="0 0 126 104" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Vysocina@1x</title>
+    <g id="1.-Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="HP" transform="translate(-292, -24)" fill="#FEFEFE">
+            <g id="HLAVIČKA" transform="translate(0, 24)">
+                <g id="Vysocina" transform="translate(292, 0)">
+                    <path d="M0,0 L37.6074318,0 L60.6854061,37.9676526 C66.9231046,48.2342999 80.4028768,51.5150809 90.635421,45.2641702 L90.635421,45.2641702 C100.867965,39.0056826 104.137848,25.480985 97.9001498,15.2143378 L88.641774,0 L126,0 L62.7772251,104 L0,0 Z" id="Path"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

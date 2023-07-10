@@ -1,0 +1,96 @@
+.match {
+  margin-bottom: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid rgba(#fff200, 0.4);
+  &:last-of-type {
+    border-bottom: none;
+  }
+  &__date {
+    font-size: 14px;
+    font-weight: 300;
+    @include media-breakpoint-down(md) {
+      text-align: center;
+    }
+  }
+  &__content {
+    display: flex;
+    align-items: center;
+    @include media-breakpoint-down(md) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    h3 {
+      text-transform: uppercase;
+      font-size: 20px;
+      padding: 0 16px;
+    }
+    img {
+      width: 48px;
+      height: 48px;
+      object-fit: contain;
+      @include media-breakpoint-down(md) {
+        margin: 16px auto;
+      }
+    }
+  }
+  &-right {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    @include media-breakpoint-down(md) {
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+    }
+  }
+  &__score {
+    display: flex;
+    align-items: center;
+    @include media-breakpoint-down(md) {
+      margin: 16px auto;
+    }
+    li {
+      color: var(--color-dark);
+      background-color: var(--color-light);
+      display: block;
+      height: 32px;
+      min-width: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+    }
+    .vysocina {
+      background-color: var(--color-yellow);
+    }
+  }
+  &__link {
+    position: relative;
+    display: block;
+    padding: 0 16px 0 18px;
+    text-decoration-color: transparent;
+    transition: all 0.3s;
+    &:hover {
+      text-decoration-color: inherit;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 5px;
+      background-image: url("../images/ico/pen.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 12px;
+      height: 12px;
+    }
+  }
+}
+
+.vysocina,
+.vysocina td {
+  color: var(--color-yellow) !important;
+}
