@@ -1,0 +1,10 @@
+.article-section {
+  .topstory-article {
+    height: auto;
+    aspect-ratio: 920/575;
+    cursor: auto;
+    &:hover h2 {
+      text-decoration: none;
+    }
+  }
+}

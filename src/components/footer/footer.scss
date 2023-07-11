@@ -1,6 +1,7 @@
 .footer {
   border-top: 2px solid var(--color-yellow);
   padding-top: 40px;
+  flex: 0 0 auto;
   &-bottom {
     display: flex;
     flex-wrap: wrap;

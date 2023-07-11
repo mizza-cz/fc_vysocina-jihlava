@@ -33,10 +33,12 @@
   </head>
   <body>
     <div class="base">
-      {% include "@components/header/header.twig" %}
+        <div class="base-content">
+          {% include "@components/header/header.twig" %}
       <main class="main" aria-label="Hlavní obsah">
         {% block main %}{% endblock %}
       </main>
+        </div>
       {% include "@components/footer/footer.twig" %}
     </div>
     <script

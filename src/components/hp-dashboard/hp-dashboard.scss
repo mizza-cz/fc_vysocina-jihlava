@@ -29,8 +29,19 @@
   &__table {
     margin-bottom: 24px;
     td {
+      line-height: 23px;
+      padding-bottom: 4px;
+      padding-top: 4px;
       text-transform: uppercase;
       font-weight: 400;
+      padding-left: 14px;
+      padding-right: 14px;
+      @include media-breakpoint-down(sm) {
+        padding-left: 8px;
+        padding-right: 8px;
+      }
+    }
+    td {
     }
     .team {
       font-weight: 700;

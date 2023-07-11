@@ -1,4 +1,50 @@
 .o-content {
+  table {
+    margin-bottom: 32px;
+    @include media-breakpoint-down(sm) {
+      width: max-content;
+    }
+  }
+  thead {
+    background-color: var(--color-yellow);
+  }
+  th {
+    text-align: left;
+    color: rgba(0, 0, 0, 1);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23px;
+    text-transform: uppercase;
+  }
+  td {
+    border-bottom: 1px solid var(--color-yellow);
+  }
+  th,
+  td {
+    padding-left: 24px;
+    padding-right: 22px;
+  }
+  th {
+    padding-top: 11px;
+    padding-bottom: 9px;
+    font-weight: 600;
+  }
+  td {
+    padding-top: 9px;
+    padding-bottom: 10px;
+  }
+  h1 {
+    margin-bottom: 24px;
+  }
+  h2 {
+    color: var(--color-yellow);
+    margin-bottom: 16px;
+    margin-top: 32px;
+  }
+  .perex,
+  p {
+    margin-bottom: 24px;
+  }
   &::after {
     display: table;
     clear: both;
@@ -9,14 +55,6 @@
   }
   > :last-child {
     margin-bottom: 0;
-  }
-  td {
-    color: var(--color-light);
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 23px;
-    padding-bottom: 4px;
-    padding-top: 4px;
   }
 }
 
@@ -47,4 +85,10 @@
   font-size: 14px;
   line-height: 150%;
   font-weight: 300;
+}
+
+.perex {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 26px;
 }

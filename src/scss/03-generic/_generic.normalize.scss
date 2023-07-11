@@ -8,6 +8,7 @@ html,
 body {
   position: relative;
   overflow-x: hidden;
+  height: 100%;
 }
 
 /* Remove default margin */
@@ -70,4 +71,13 @@ button,
 textarea,
 select {
   font: inherit;
+}
+
+.base {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.base-content {
+  flex: 1 0 auto;
 }
