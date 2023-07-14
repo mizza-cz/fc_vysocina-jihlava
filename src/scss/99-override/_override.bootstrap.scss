@@ -18,6 +18,9 @@
     background-color: transparent;
   }
 }
+.bg-primary {
+  background-color: var(--color-bg);
+}
 .text-primary,
 .date-primary {
   color: var(--color-yellow);
@@ -39,5 +42,8 @@
 }
 .ml-auto {
   margin-left: auto !important;
+}
+.mb-0 {
+  margin-bottom: 0 !important;
 }
 /*! purgecss end ignore */
