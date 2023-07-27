@@ -5,6 +5,7 @@
     width: 100%;
     aspect-ratio: 440/275;
     position: relative;
+    display: block;
     overflow: hidden;
     &:hover {
       img {
@@ -77,6 +78,8 @@
     }
   }
   .post__img {
+    img {
+    }
     &::before {
       display: none;
     }
