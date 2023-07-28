@@ -1,4 +1,11 @@
 .article-section {
+  .topstory-article-info {
+    padding-right: 3rem;
+    @include media-breakpoint-down(lg) {
+      bottom: 20px;
+      padding-right: 2rem;
+    }
+  }
   .topstory-article {
     height: auto;
     aspect-ratio: 920/575;
