@@ -65,6 +65,14 @@
       text-align: center;
       margin: 0 auto;
     }
+    a {
+      font-size: 32px;
+      font-weight: 700;
+      text-decoration-color: transparent;
+      &:hover {
+        text-decoration-color: inherit;
+      }
+    }
     span {
       font-size: 32px;
       font-weight: 700;
