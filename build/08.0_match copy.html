@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="cs-CZ">
+
+<head>
+	<meta charset="utf-8" />
+	<title>08.0_match - Název projektu</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+	<meta name="format-detection" content="telephone=no" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet" />
+	<link rel="preload" href="css/styles.css" as="style" />
+	<link rel="stylesheet" media="screen, handheld" href="css/styles.css" />
+	<link rel="stylesheet" media="print" href="css/prints.css" />
+	<link rel="preload" href="https://code.jquery.com/jquery-3.6.0.min.js" as="script" crossorigin />
+	<link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" as="script" crossorigin />
+	<link rel="preload" href="js/scripts.js" as="script" />
+</head>
+
+<body>
+	<div class="base">
+		<div class="base-content">
+			<header class="header">
+				<div class="container">
+					<div class="header__inner">
+						<nav class="navbar navbar-expand-xl">
+							<a class="header__logo" href="">
+								<img src="images/ico/logo.svg" loading="lazy" alt="logo" />
+							</a>
+							<div class="collapse navbar-collapse" id="navbarNavDropdown">
+								<ul class="navbar-nav">
+									<li class="nav-item dropdown">
+										<a class="nav-link dropdown-toggle" href="#" id="klub" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+											Klub
+										</a>
+										<ul class="dropdown-menu" aria-labelledby="klub">
+											<li><a class="dropdown-item" href="#">O nás</a></li>
+											<li><a class="dropdown-item" href="#">Historie</a></li>
+											<li>
+												<a class="dropdown-item" href="#">Osobnosti klubu</a>
+											</li>
+											<li>
+												<a class="dropdown-item" href="#">Nejčastějšie dotazy</a>
+											</li>
+
+											<li><a class="dropdown-item" href="#">Na stiahnutie</a></li>
+											<li>
+												<a class="dropdown-item" href="#">Kontakty</a>
+											</li>
+											<li>
+												<a class="dropdown-item" href="#">Tréningové centrá</a>
+											</li>
+											<li>
+												<a class="dropdown-item" href="#">Práca & Kariéra</a>
+											</li>
+										</ul>
+									</li>
+									<li class="nav-item dropdown">
+										<a class="nav-link dropdown-toggle" href="#" id="a-tym" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+											Hráči
+										</a>
+										<ul class="dropdown-menu" aria-labelledby="a-tym">
+											<li><a class="dropdown-item" href="#">Soupiska</a></li>
+											<li><a class="dropdown-item" href="#">Statistiky</a></li>
+											<li>
+												<a class="dropdown-item" href="#">Realizační tým</a>
+											</li>
+										</ul>
+									</li>
+									<li class="nav-item dropdown">
+										<a class="nav-link active dropdown-toggle" href="#" id="b-tym" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+											zápasy
+										</a>
+										<ul class="dropdown-menu" aria-labelledby="b-tym">
+											<li><a class="dropdown-item" href="#">Soupiska</a></li>
+											<li><a class="dropdown-item" href="#">Statistiky</a></li>
+											<li>
+												<a class="dropdown-item" href="#">Realizační tým</a>
+											</li>
+										</ul>
+									</li>
+
+									<li class="nav-item dropdown">
+										<a class="nav-link dropdown-toggle" href="#" id="mladez" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+											Mládež
+										</a>
+										<ul class="dropdown-menu" aria-labelledby="mladez">
+											<li><a class="dropdown-item" href="#">Soupiska</a></li>
+											<li><a class="dropdown-item" href="#">Statistiky</a></li>
+											<li>
+												<a class="dropdown-item" href="#">Realizační tým</a>
+											</li>
+										</ul>
+									</li>
+									<li class="nav-item dropdown">
+										<a class="nav-link dropdown-toggle" href="#" id="fanousci" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+											Fanoušci
+										</a>
+										<ul class="dropdown-menu" aria-labelledby="fanousci">
+											<li><a class="dropdown-item" href="#">novinky</a></li>
+											<li><a class="dropdown-item" href="#">fanklub</a></li>
+										</ul>
+									</li>
+									<li class="nav-item dropdown">
+										<a class="nav-link dropdown-toggle" href="#" id="historie" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+											Historie
+										</a>
+										<ul class="dropdown-menu" aria-labelledby="historie">
+											<li><a class="dropdown-item" href="#">novinky</a></li>
+											<li><a class="dropdown-item" href="#">fanklub</a></li>
+											<li><a class="dropdown-item" href="#">novinky</a></li>
+											<li><a class="dropdown-item" href="#">fanklub</a></li>
+										</ul>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#"> Partneři </a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#"> Fanshop </a>
+									</li>
+
+									<li class="nav-item">
+										<a class="nav-link" href="#"> Kontakty </a>
+									</li>
+								</ul>
+								<ul class="social">
+									<li class="social__item">
+										<a target="_blank" class="social__link" href="#">
+											<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+												<path d="M10 0C4.477 0 0 4.496 0 10.042c0 4.974 3.605 9.093 8.332 9.89v-7.795H5.92V9.33h2.412V7.263c0-2.4 1.46-3.708 3.593-3.708 1.021 0 1.899.076 2.154.11v2.508l-1.48.001c-1.159 0-1.383.553-1.383 1.365V9.33h2.767l-.36 2.805h-2.407V20C16.164 19.395 20 15.171 20 10.039 20 4.496 15.523 0 10 0z" fill="#FFF200" fill-rule="nonzero" />
+											</svg> </a>
+									</li>
+									<li class="social__item">
+										<a target="_blank" class="social__link" href="#">
+											<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+												<path d="M10 0C4.478 0 0 4.478 0 10s4.478 10 10 10 10-4.478 10-10S15.522 0 10 0zm4.566 7.797c.004.098.006.197.006.297 0 3.033-2.308 6.53-6.53 6.53a6.497 6.497 0 01-3.518-1.03c.18.02.362.03.547.03a4.606 4.606 0 002.85-.982 2.298 2.298 0 01-2.143-1.594 2.284 2.284 0 001.036-.04 2.296 2.296 0 01-1.841-2.25V8.73c.31.172.663.275 1.04.287a2.293 2.293 0 01-.71-3.065 6.517 6.517 0 004.73 2.399 2.296 2.296 0 013.911-2.093 4.604 4.604 0 001.458-.558 2.304 2.304 0 01-1.01 1.27 4.578 4.578 0 001.319-.362c-.307.46-.697.865-1.145 1.189z" fill="#FFF200" fill-rule="nonzero" />
+											</svg> </a>
+									</li>
+									<li class="social__item">
+										<a target="_blank" class="social__link" href="#">
+											<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+												<g fill="#FFF200" fill-rule="nonzero">
+													<path d="M11.914 10a1.914 1.914 0 11-3.828 0 1.914 1.914 0 013.828 0z" />
+													<path d="M14.476 6.613a1.78 1.78 0 00-.43-.66 1.778 1.778 0 00-.66-.43c-.202-.078-.506-.171-1.066-.197-.605-.028-.787-.033-2.32-.033s-1.715.005-2.32.033c-.56.026-.864.12-1.067.198-.249.092-.475.238-.66.43a1.78 1.78 0 00-.43.66c-.078.202-.172.506-.197 1.066-.028.605-.034.787-.034 2.32s.006 1.715.034 2.32c.025.56.119.864.198 1.067.092.25.238.475.43.66.184.19.41.337.66.43.202.078.506.172 1.066.197.605.028.786.034 2.32.034 1.533 0 1.715-.006 2.32-.034.56-.025.864-.119 1.067-.198.5-.193.896-.589 1.09-1.09.078-.202.171-.506.197-1.065.028-.606.033-.788.033-2.32 0-1.534-.005-1.716-.033-2.321-.025-.56-.119-.864-.198-1.067zM10 12.95a2.949 2.949 0 110-5.898 2.949 2.949 0 010 5.898zm3.065-5.325a.69.69 0 110-1.378.69.69 0 010 1.378z" />
+													<path d="M10 0C4.478 0 0 4.478 0 10s4.478 10 10 10 10-4.478 10-10S15.522 0 10 0zm5.708 12.367c-.028.612-.125 1.029-.267 1.394a2.936 2.936 0 01-1.68 1.68c-.365.142-.782.239-1.393.267-.613.027-.808.034-2.368.034-1.56 0-1.755-.007-2.367-.034-.612-.028-1.029-.125-1.394-.267a2.813 2.813 0 01-1.017-.663 2.814 2.814 0 01-.663-1.017c-.141-.365-.239-.782-.266-1.393-.029-.613-.035-.809-.035-2.368 0-1.56.006-1.755.034-2.367.028-.612.125-1.029.267-1.394.144-.383.37-.73.663-1.017a2.813 2.813 0 011.017-.663c.365-.142.782-.239 1.394-.267.612-.027.808-.034 2.367-.034 1.56 0 1.755.007 2.367.035.612.027 1.029.124 1.394.266.383.144.73.37 1.017.663.292.287.519.634.663 1.017.142.365.239.782.267 1.394.028.612.034.808.034 2.367 0 1.56-.006 1.755-.034 2.367z" />
+												</g>
+											</svg> </a>
+									</li>
+									<li class="social__item">
+										<a target="_blank" class="social__link" href="#">
+											<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+												<g fill="#FFF200" fill-rule="nonzero">
+													<path d="M8.754 11.873L12.007 10 8.754 8.127z" />
+													<path d="M10 0C4.478 0 0 4.478 0 10s4.478 10 10 10 10-4.478 10-10S15.522 0 10 0zm6.249 10.01s0 2.028-.258 3.006a1.566 1.566 0 01-1.101 1.102c-.978.257-4.89.257-4.89.257s-3.902 0-4.89-.268a1.566 1.566 0 01-1.101-1.101C3.75 12.038 3.75 10 3.75 10s0-2.028.258-3.006A1.598 1.598 0 015.11 5.882c.978-.257 4.89-.257 4.89-.257s3.912 0 4.89.268c.535.144.957.566 1.101 1.101.268.978.258 3.016.258 3.016z" />
+												</g>
+											</svg> </a>
+									</li>
+								</ul>
+							</div>
+						</nav>
+
+						<button class="c-header__opener js-header__opener" type="button">
+							<span></span>
+						</button>
+					</div>
+				</div>
+			</header>
+			<main class="main" aria-label="Hlavní obsah">
+				<section class="article-section">
+					<div class="container">
+						<div class="row g-10 mb-10">
+							<div class="col-xl-8">
+								<div class="topstory-article position-relative">
+									<div class="topstory-article-image">
+										<img src="images/content/1.jpeg" alt="" />
+									</div>
+									<div class="topstory-article-info p-40">
+										<div class="row g-4">
+											<div class="col-auto">
+												<span class="date-primary text-white"> 24. 12. 2021 </span>
+											</div>
+											<div class="col-auto">
+												<span>Miroslav Fuks</span>
+											</div>
+										</div>
+										<h2 class="text-white overflow-ellipsis overflow-hidden" style="--text-lines: 3">
+											Vítězný vstup do nové sezóny se zrodil v 5. minutě nastavení!
+										</h2>
+									</div>
+								</div>
+								<div class="row mt-10">
+									<div class="col-11 m-auto">
+										<div class="perex">
+											Fotbalisté FC Vysočina na startu sezóny vybojovali cenné vítězství
+											nad Opavou 2:1 (0:0). Ještě v 82. minutě prohrávali, ale poté
+											předvedli skvělý obrat. Nejprve z penalty vyrovnal Jakub Selnar a
+											o třech bodech pro domácí rozhodl v 5. minutě nastaveného času
+											střídající Tomáš Franěk. Drama úvodního duelu podtrhla 86. minuta,
+											kdy hostující Hýbl neproměnil penaltu.
+										</div>
+										<div class="match-section">
+											<div class="match-section__inner">
+												<div class="match-section__logos">
+													<img src="images/ico/logo.svg" loading="lazy" alt="logo" />
+													<img src="images/content/sparta.png" loading="lazy" alt="logo" />
+												</div>
+												<div class="match-section__info">
+													<p>18.kolo, neděle 12.3.2023, 14:30</p>
+													<h2 class="h3">Fc vysočina - AC Sparta Praha</h2>
+												</div>
+												<div class="match-section__score win">
+													<span>2:2 </span>(2:1)
+												</div>
+											</div>
+											<div class="match-section__list">
+												<p>
+													<strong>FC Vysočina:</strong> Jágrik – T. Svoboda, Vedral,
+													Gabriel, Peřina – Lacko (61. Shudeiwa), Tureček – Ogiomade,
+													Selnar, Fila (85. Tall) – Araujo-Wilson (76. Zoubele).
+													Náhradníci: Soukup – Záhradnik, Vítek, Křehlík.
+												</p>
+												<p>
+													<strong>AS Sparta Praha:</strong> Heča – Vydra, Večerka (46.
+													Kukučka), D.Horák – Hodouš (74. Váňa), Kaštánek, Okeke, Goljan
+													(46. Lehocký) – Cissé, Pavelka (61. Jonáš) – Schánělec (61.
+													O.Novotný). Náhradníci: Nalezinek – Ambler.
+												</p>
+												<ul>
+													<li>
+														<strong> Góly:</strong> 19. Ogiomade, 53. Selnar – 85. Cissé
+													</li>
+													<li><strong>ŽK:</strong> 14. Vydra (SPB)</li>
+													<li><strong>Rozhodčí: </strong> Krejsa – Dresler, Bureš</li>
+													<li><strong>Diváci:</strong> 673</li>
+												</ul>
+											</div>
+										</div>
+										<div class="o-content">
+											<h2>Komentář</h2>
+											<p>
+												Kouč David Oulehla do ostrého startu českých profesionálních
+												soutěží nasadil na vlas stejnou sestavu, jaká nastoupila do
+												nevydařené generálky na Bohemians. Premiéru v základní sestavě
+												si tedy na levém beku odbyl devatenáctiletý odchovanec Farka a
+												příležitost dostali obě nové posily - Tombul a Pešek.
+											</p>
+											<p>
+												Po opatrném úvodu, během kterého si ani jeden z týmů nedokázal
+												vypracovat delší tlak, se ve 12. minutě rozhodl prolomit
+												střelecké prázdno Fila. Jeho dalekonosná rána však cíl minula o
+												několik metrů. Po půlhodině hry se po rychlém protiútoku
+												odhodlal ke střele Selnar, jenže ani jeho pokus nevyvedl
+												brankáře Adama Richtera z míry. Největší šanci prvního poločasu
+												si pak po rohovém kopu ve 37. minutě vytvořila Vysočina, obětavá
+												obrana Opavy ale balon v cestě do sítě zastavila.
+											</p>
+											<iframe width="560" height="315" src="https://www.youtube.com/embed/MzbSrfMn2ow" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+											<p>
+												Po změně stran zahrozili jako první domácí. V 50. minutě vypálil
+												pohotově z otočky po závaru ve vápně kapitán Jihlavy Vedral, ale
+												ani tato střela se mezi tři tyče nevešla. O chvíli později
+												vyrazil brankář Richter pokus Fily a následná dorážka
+												orazítkovala horní tyč. Slezanům stačila na vstřelení gólu první
+												větší příležitost. V 69. minutě rozveselil hrstku opavských
+												příznivců přesnou ranou na zadní tyč Blecha, který se trefil po
+												přihrávce Šiguta hned ve svém prvním zápase v novém působišti. O
+												11 minut později si však po závaru před brankou vybojovali
+												domácí pokutový kop po faulu na Talla. K němu se postavil Selnar
+												a tvrdou ranou do pravého dolního rohu nedal prudkou ránou
+												Richterovi šanci. V 86. se kopala penalta i na druhé straně po
+												faulu na Vedrala na Šiguta. Hýbl však nasměroval míč jen do levé
+												tyče brány Soukupa. V nastaveném čase nakonec rozhodl o výhře
+												domácích prudkou střelou z malého vápna do pravého horního rohu
+												střídající Franěk.
+											</p>
+											<h2>Fotogalerie</h2>
+											<div class="photogallery">
+												<div class="row g-0">
+													<div class="col-lg-3 col-6">
+														<a class="photogallery__item" href="#" data-gallery="1" data-gallery-id="1">
+															<img src="images/content/1.jpeg" loading="lazy" alt="" />
+														</a>
+													</div>
+													<div class="col-lg-3 col-6">
+														<a class="photogallery__item" href="#" data-gallery="1" data-gallery-id="1">
+															<img src="images/content/2.jpeg" loading="lazy" alt="" />
+														</a>
+													</div>
+													<div class="col-lg-3 col-6">
+														<a class="photogallery__item" href="#" data-gallery="1" data-gallery-id="1">
+															<img src="images/content/3.jpeg" loading="lazy" alt="" />
+														</a>
+													</div>
+													<div class="col-lg-3 col-6">
+														<a class="photogallery__item" href="#" data-gallery="1" data-gallery-id="1">
+															<img src="images/content/4.jpeg" loading="lazy" alt="" />
+															<span>+12</span>
+														</a>
+													</div>
+												</div>
+											</div>
+											<h2>Pokračovat na další článek:</h2>
+										</div>
+									</div>
+									<div class="mt-6">
+										<article class="post-width">
+											<div class="row g-lg-10 g-0">
+												<div class="col-lg-6">
+													<a href="#" class="post__img">
+														<img src="images/content/3.jpeg" alt="" />
+													</a>
+												</div>
+												<div class="col-lg-6">
+													<div class="post-width__info">
+														<div class="post__date">24. 3. 2023</div>
+														<h2 class="h2">
+															<a href="#">
+																Vysočina se v dramatické bitvě musela spokojit s bodem
+															</a>
+														</h2>
+														<p class="p2">
+															Vysočina nadále drží svoji jarní neporazitelnost, ovšem stále čeká na
+															první vítězství. Ano, i její třetí jarní představení skončilo remízou.
+															Na půdě FC SILON Táborsko však lze hovořit o plusovém bodu, neboť
+															domácí šli do vedení a byli v utkání aktivnějším celkem. Jihlavské
+															vyrovnání zařídil bezpečně proměněnou penaltou Jakub Selnar.
+														</p>
+													</div>
+												</div>
+											</div>
+										</article>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-4">
+								<aside>
+									<div class="mb-10">
+										<div class="count-down">
+											<div class="count-down__inner">
+												<h5 class="h5 count-down__title">Nejbližší zápas začíná za</h5>
+												<div id="js-timer" class="timer" role="timer" aria-label="A timer, counting down to " data-endtime="2023-09-22 21:00:00">
+													<span class="timer__item" id="timer-days">
+														<span class="timer__value h1"></span>
+														<span class="timer__label timer__label-days">dny</span>
+													</span>
+													<span class="timer__item" id="timer-hours">
+														<span class="timer__value h1"></span>
+														<span class="timer__label">hodin</span>
+													</span>
+													<span class="timer__item" id="timer-minutes">
+														<span class="timer__value h1"></span>
+														<span class="timer__label">minut</span>
+													</span>
+													<span class="timer__item" id="timer-seconds">
+														<span class="timer__value h1"></span>
+														<span class="timer__label">vteřin</span>
+													</span>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="aside-match">
+										<div class="aside-match__logos">
+											<div class="aside-match__logo">
+												<img src="images/content/sparta.png" loading="lazy" alt="logo" />
+											</div>
+											<div class="aside-match__logo">
+												<img src="images/ico/logo.svg" loading="lazy" alt="logo" />
+											</div>
+										</div>
+										<p class="aside-match__date">
+											<span>17. kolo F:NL</span>
+											sobota 25. března 2023, 18:00
+										</p>
+										<ul class="btns">
+											<li>
+												<a href="#" class="btn">Vstupenky</a>
+											</li>
+											<li>
+												<a href="#" class="btn btn-transparent">On-line přenos</a>
+											</li>
+										</ul>
+									</div>
+									<a target="_blank" href="#" class="d-block w-100 mb-10">
+										<img class="w-100" src="https://via.placeholder.com/440x148" loading="lazy" alt="" />
+									</a>
+									<div class="hp-dashboard__col mb-10">
+										<div class="hp-dashboard__title">
+											<svg width="56" height="56" viewBox="0 0 56 56" xmlns="http://www.w3.org/2000/svg">
+												<g fill="none" fill-rule="evenodd">
+													<path stroke="#FFF200" stroke-width="2" d="M1 1h54v54H1z" />
+													<path d="M20.107 18.93H42v2.298H20.107V18.93zm0 7.825H42v2.298H20.107v-2.298zm0 7.934H42v2.298H20.107v-2.298zM15.442 22.14h.879V18h-1.58v.82h.7v3.32zm1.56 7.077h-1.704l.251-.2.539-.438c.628-.511.879-.912.879-1.441a1.36 1.36 0 00-.457-1.013 1.313 1.313 0 00-1.05-.319 1.37 1.37 0 00-1.073.428c-.28.294-.418.697-.381 1.104h.933a.628.628 0 01.113-.467.608.608 0 01.407-.244.56.56 0 01.557.565 1.1 1.1 0 01-.395.803l-1.561 1.368v.711h2.943v-.857zm-.645 6.493a.951.951 0 00.502-.875 1.228 1.228 0 00-.452-.883 1.188 1.188 0 00-.948-.248c-.369-.033-.733.1-.998.362-.266.263-.406.63-.383 1.006h.897a.545.545 0 01.484-.584.463.463 0 01.48.202.48.48 0 010 .527.463.463 0 01-.48.201h-.161v.693h.161c.413 0 .664.201.664.53a.533.533 0 01-.176.402.515.515 0 01-.416.126.623.623 0 01-.456-.18.644.644 0 01-.19-.458h-.843c-.023.403.129.797.415 1.077.286.28.678.42 1.074.382.373.046.748-.07 1.032-.32.284-.25.45-.611.458-.993a.966.966 0 00-.664-.967z" fill="#FFF200" fill-rule="nonzero" />
+												</g>
+											</svg>
+											<h3 class="h2">Tabulka F:NL</h3>
+										</div>
+										<div class="hp-dashboard__content">
+											<div class="hp-dashboard__table">
+												<table>
+													<tbody>
+														<tr>
+															<td>99.</td>
+															<td class="team">
+																<a href="#"> Slezský FC Opava </a>
+															</td>
+															<td>12</td>
+															<td>32:18</td>
+															<td>29</td>
+														</tr>
+														<tr class="vysocina">
+															<td>1.</td>
+															<td class="team">
+																<a href="#"> FC Vysočina </a>
+															</td>
+															<td>8</td>
+															<td>32:18</td>
+															<td>29</td>
+														</tr>
+
+														<tr>
+															<td>1.</td>
+															<td class="team">
+																<a href="#"> Slezský FC Opava </a>
+															</td>
+															<td>2</td>
+															<td>32:18</td>
+															<td>29</td>
+														</tr>
+														<tr>
+															<td>1.</td>
+															<td class="team">
+																<a href="#"> Slezský FC Opava </a>
+															</td>
+															<td>12</td>
+															<td>32:18</td>
+															<td>29</td>
+														</tr>
+														<tr>
+															<td>1.</td>
+															<td class="team">
+																<a href="#"> Slezský FC Opava </a>
+															</td>
+															<td>12</td>
+															<td>32:18</td>
+															<td>29</td>
+														</tr>
+														<tr>
+															<td>1.</td>
+															<td class="team">
+																<a href="#"> Slezský FC Opava </a>
+															</td>
+															<td>8</td>
+															<td>32:18</td>
+															<td>29</td>
+														</tr>
+														<tr>
+															<td>1.</td>
+															<td class="team">
+																<a href="#"> Slezský FC Opava </a>
+															</td>
+															<td>1</td>
+															<td>32:18</td>
+															<td>29</td>
+														</tr>
+														<tr>
+															<td>1.</td>
+															<td class="team">
+																<a href="#"> Slezský FC Opava </a>
+															</td>
+															<td>1</td>
+															<td>32:18</td>
+															<td>29</td>
+														</tr>
+														<tr>
+															<td>1.</td>
+															<td class="team">
+																<a href="#"> Slezský FC Opava </a>
+															</td>
+															<td>8</td>
+															<td>32:18</td>
+															<td>29</td>
+														</tr>
+														<tr>
+															<td>1.</td>
+															<td class="team">
+																<a href="#"> Slezský FC Opava </a>
+															</td>
+															<td>2</td>
+															<td>32:18</td>
+															<td>29</td>
+														</tr>
+														<tr>
+															<td>1.</td>
+															<td class="team">
+																<a href="#"> Slezský FC Opava </a>
+															</td>
+															<td>1</td>
+															<td>32:18</td>
+															<td>29</td>
+														</tr>
+														<tr>
+															<td>1.</td>
+															<td class="team">
+																<a href="#"> Slezský FC Opava </a>
+															</td>
+															<td>2</td>
+															<td>32:18</td>
+															<td>29</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+											<a href="#" class="btn m-auto btn-transparent">Kompletní tabulka</a>
+										</div>
+									</div>
+									<div class="hp-dashboard__col">
+										<div class="hp-dashboard__title">
+											<svg width="56" height="56" viewBox="0 0 56 56" xmlns="http://www.w3.org/2000/svg">
+												<g stroke="#FFF200" stroke-width="2" fill="none" fill-rule="evenodd">
+													<path d="M1 1h54v54H1z" />
+													<g stroke-linecap="round" stroke-linejoin="round">
+														<path d="M34 18v18c0 1.6 1.3 3 3 3h0c1.6 0 3-1.3 3-3v-9h-6" />
+														<path d="M34 18v18c0 1.3.8 2.4 2 2.8v.2H19c-1.7 0-3-1.4-3-3V18h18zM20 23h6M20 27h2" />
+													</g>
+												</g>
+											</svg>
+											<h3 class="h2">Aktuality</h3>
+										</div>
+										<div class="hp-dashboard__content">
+											<div class="row mb-6">
+												<div class="col-auto">
+													<div class="hp-dashboard__date">6. 2.</div>
+												</div>
+												<div class="col-9">
+													<h4 class="h3">Duel proti Slezský FC Opavamouci B zrušen</h4>
+												</div>
+												<div class="col-auto mt-2">
+													<p>
+														Plánovaný přípravný duel proti juniorce Slezský FC
+														Opavamouce byl zrušen. Důvodem je viróza v kabině Sigmy.
+													</p>
+												</div>
+											</div>
+											<div class="row mb-6">
+												<div class="col-auto">
+													<div class="hp-dashboard__date">26. 2.</div>
+												</div>
+												<div class="col-9">
+													<h4 class="h3">Juniorka vs. Svratka vs. Svratka sBrno 4:1</h4>
+												</div>
+												<div class="col-auto mt-2">
+													<p>
+														Juniorka sehrála druhý přípravný duel v mezidobí. Znovu
+														vstřelila 4 branky, když si poradila se Svratkou Brno 4:1
+														(1:1). Za naše mladíky skórovali Jiroušek, Savi a dvakrát
+														Záruba.
+													</p>
+												</div>
+											</div>
+											<div class="row mb-6">
+												<div class="col-auto">
+													<div class="hp-dashboard__date">26. 12.</div>
+												</div>
+												<div class="col-9">
+													<h4 class="h3">Juniorka porazila Duklu</h4>
+												</div>
+												<div class="col-auto mt-2">
+													<p>
+														V sobotním přípravném utkání juniorek porazil výběr FC
+														Vysočina mladíky Dukly Praha 4:2 (1:1), když naše branky
+														zaznamenali Tall, Lokvenc, Savi a jeden gól byl vlastní.
+													</p>
+												</div>
+											</div>
+											<a href="#" class="btn m-auto mt-10 btn-transparent">Další aktuality</a>
+										</div>
+									</div>
+								</aside>
+							</div>
+						</div>
+
+						<a target="_blank" href="#" class="d-block w-100 mb-10">
+							<img class="w-100" src="https://via.placeholder.com/1400x135" loading="lazy" alt="" />
+						</a>
+					</div>
+				</section>
+
+			</main>
+		</div>
+		<footer class="footer">
+			<div class="container">
+				<div class="row gy-10">
+					<div class="col-xl-3 col-md-6">
+						<div class="footer-col">
+							<h6 class="h3">Klub</h6>
+							<ul>
+								<li>
+									<a href="#">akcionáři</a>
+								</li>
+								<li>
+									<a href="#">Vize</a>
+								</li>
+								<li>
+									<a href="#">Podporovatelský program</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-xl-3 col-md-6">
+						<div class="footer-col">
+							<h6 class="h3">Mládež</h6>
+							<ul>
+								<li>
+									<a href="#">Týmy</a>
+								</li>
+								<li>
+									<a href="#">Regionální akademie</a>
+								</li>
+								<li>
+									<a href="#">Přijď mezi nás</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-xl-3 col-md-6">
+						<div class="footer-col">
+							<h6 class="h3">Fanoušci</h6>
+							<ul>
+								<li>
+									<a href="#">Aktuality</a>
+								</li>
+								<li>
+									<a href="#">Fanshop</a>
+								</li>
+								<li>
+									<a href="#">Napište nám</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-xl-3 col-md-6">
+						<div class="footer-col">
+							<h6 class="h3">Kontakty</h6>
+							<ul>
+								<li>
+									<a href="#">Podmínky užití webu</a>
+								</li>
+								<li>
+									<a href="#">Ochrana soukromí</a>
+								</li>
+								<li>
+									<a href="#">Použití cookies</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="footer-bottom">
+					<div class="copyright">
+						Všechna práva vyhrazena © 2023 FC Vysočina Jihlava &
+						<a href="https://esportsmedia.cz/">eSports.cz, s.r.o.</a>
+					</div>
+					<a class="cookies" href="#">Nastavení cookies</a>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script defer src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+	<script defer src="js/scripts.js"></script>
+</body>
+
+</html>
