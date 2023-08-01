@@ -5,21 +5,6 @@
       max-width: 100% !important;
     }
   }
-  .match-section__inner {
-    background-color: var(--color-bg);
-    margin-bottom: 20px;
-    padding: 20px;
-    .win {
-      color: #2db00f;
-    }
-    .lose {
-      color: #ed1d24;
-    }
-  }
-  .match-section__score {
-    font-size: 32px;
-    font-weight: 700;
-  }
   &__filter {
     background-color: VAR(--color-bg);
     display: flex;
@@ -40,11 +25,24 @@
     }
   }
 }
+.matches-section__row {
+  .match-section__inner {
+    background-color: var(--color-bg);
+    margin-bottom: 20px;
+    padding: 20px;
+    .win {
+      color: #2db00f;
+    }
+    .lose {
+      color: #ed1d24;
+    }
+  }
+  .match-section__score {
+    font-size: 32px;
+    font-weight: 700;
+  }
+}
 .kalendar-box {
-  .aside__menu {
-  }
-  ul {
-  }
   li {
     display: flex;
     a {
