@@ -46,11 +46,11 @@
 .mb-0 {
   margin-bottom: 0 !important;
 }
+#hockey_bar_esports,
 #es-strip-container {
   @include media-breakpoint-down(lg) {
     display: none !important;
   }
 }
 
- 
 /*! purgecss end ignore */
