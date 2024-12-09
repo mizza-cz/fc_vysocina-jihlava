@@ -1,5 +1,13 @@
 {% extends "@components/base/base.twig" %} {% set title = "02.0_article" %} {%
 block main %}
-{% include "@components/article-section/article-section.twig" %}
+<div class="base">
+  <div class="base-content">
+    {% include "@components/header/header.twig" %}
+    <main class="main" aria-label="Hlavní obsah">
+      {% include "@components/article-section/article-section.twig" %}
+    </main>
+  </div>
+  {% include "@components/footer/footer.twig" %}
+</div>
 
 {% endblock %}

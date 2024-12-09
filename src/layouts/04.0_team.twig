@@ -1,5 +1,13 @@
 {% extends "@components/base/base.twig" %} {% set title = "04.0_team" %} {%
 block main %}
+<div class="base">
+  <div class="base-content">
+    {% include "@components/header/header.twig" %}
+    <main class="main" aria-label="Hlavní obsah">
+      {% include "@components/team-section/team-section.twig" %}
+    </main>
+  </div>
+  {% include "@components/footer/footer.twig" %}
+</div>
 
-{% include "@components/team-section/team-section.twig" %}
 {% endblock %}

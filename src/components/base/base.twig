@@ -50,15 +50,8 @@
     </script>
   </head>
   <body>
-    <div class="base">
-      <div class="base-content">
-        {% include "@components/header/header.twig" %}
-        <main class="main" aria-label="Hlavní obsah">
-          {% block main %}{% endblock %}
-        </main>
-      </div>
-      {% include "@components/footer/footer.twig" %}
-    </div>
+    {% block main %}{% endblock %}
+   
     <script
       defer
       src="https://code.jquery.com/jquery-3.6.0.min.js"

@@ -46,4 +46,11 @@
 .mb-0 {
   margin-bottom: 0 !important;
 }
+#es-strip-container {
+  @include media-breakpoint-down(lg) {
+    display: none !important;
+  }
+}
+
+ 
 /*! purgecss end ignore */

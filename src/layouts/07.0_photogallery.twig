@@ -1,3 +1,13 @@
 {% extends "@components/base/base.twig" %} {% set title = "07.0_photogallery" %}
-{% block main %} {% include
-"@components/photogallery-section/photogallery-section.twig" %} {% endblock %}
+{% block main %}
+
+<div class="base">
+  <div class="base-content">
+    {% include "@components/header/header.twig" %}
+    <main class="main" aria-label="Hlavní obsah">
+      {% include "@components/photogallery-section/photogallery-section.twig" %}
+    </main>
+  </div>
+  {% include "@components/footer/footer.twig" %}
+</div>
+{% endblock %}

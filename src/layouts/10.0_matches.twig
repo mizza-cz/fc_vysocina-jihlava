@@ -1,5 +1,14 @@
 {% extends "@components/base/base.twig" %} {% set title = "10.0_matches" %} {%
 block main %}
-{% include "@components/matches-section/matches-section.twig" %}
+
+<div class="base">
+  <div class="base-content">
+    {% include "@components/header/header.twig" %}
+    <main class="main" aria-label="Hlavní obsah">
+      {% include "@components/matches-section/matches-section.twig" %}
+    </main>
+  </div>
+  {% include "@components/footer/footer.twig" %}
+</div>
 
 {% endblock %}
