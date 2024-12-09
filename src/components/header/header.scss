@@ -19,22 +19,24 @@
   }
   &__logo {
     display: block;
-    width: 134px;
+    width: 120px;
     margin: 0 24px;
     position: absolute;
     top: 0;
     left: 0;
     z-index: 9999;
+    height: 120px;
     @include media-breakpoint-down(xxl) {
       margin: 0 24px;
     }
     @include media-breakpoint-down(xl) {
+      height: auto;
       width: 80px;
       top: -10px;
     }
     img {
       width: 100%;
-      height: auto;
+      height: 100%;
       object-fit: contain;
     }
   }
