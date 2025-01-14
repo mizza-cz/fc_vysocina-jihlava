@@ -1,29 +1,7 @@
 .base {
-  background-color: var(--color-dark);
+  background-color: var(--color-primary);
   .base-content,
   .footer {
-    background-color: var(--color-dark);
-  }
-}
-.base.base-bg {
-  background-color: #002a68;
-  .base-content,
-  .footer {
-    background-color: #002a68;
-  }
-}
-.base.base-bg-2 {
-  background-color: #00173d;
-  .base-content,
-  .footer {
-    background-color: #00173d;
-  }
-}
-
-.base.base-bg-3 {
-  background-color: #010b1e;
-  .base-content,
-  .footer {
-    background-color: #010b1e;
+    background-color: var(--color-primary);
   }
 }

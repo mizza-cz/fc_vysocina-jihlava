@@ -11,7 +11,7 @@
   }
   #topstory-slider-paginator {
     font-size: 40px;
-    color: var(--color-dark);
+    color: var(--color-primary);
     opacity: 1;
     font-weight: 600;
     @include media-breakpoint-down(md) {
@@ -68,17 +68,17 @@
       align-items: center;
       justify-content: space-around;
       flex-wrap: wrap;
-      @include media-breakpoint-down(md){
-         justify-content: flex-start;
+      @include media-breakpoint-down(md) {
+        justify-content: flex-start;
       }
     }
     li {
       padding: 0 16px;
       font-size: 18px;
       margin-bottom: 24px;
-      @include media-breakpoint-down(md){
-         max-width: 50%;
-         flex: 0 0 50%;
+      @include media-breakpoint-down(md) {
+        max-width: 50%;
+        flex: 0 0 50%;
       }
       span {
         display: block;
