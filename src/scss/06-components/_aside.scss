@@ -36,12 +36,12 @@ aside {
   }
 }
 .aside__menu {
-  background-color: var(--color-bg);
+  background-color: var(--color-light);
   margin-bottom: 40px;
   padding-bottom: 8px;
- 
+
   .h2 {
-    color: var(--color-yellow);
+    color: var(--color-primary);
     padding-left: 40px;
     padding-right: 40px;
     padding: 16px 40px;
@@ -52,7 +52,7 @@ aside {
     }
     .active {
       background-color: var(--color-yellow);
-      color: var(--color-dark);
+      color: var(--color-primary);
     }
     a {
       font-size: 20px;
@@ -66,6 +66,7 @@ aside {
       padding-right: 40px;
       padding-top: 12px;
       padding-bottom: 12px;
+      color: var(--color-dark);
       transition: all 0.3s;
       &:hover {
         background-color: var(--color-yellow);

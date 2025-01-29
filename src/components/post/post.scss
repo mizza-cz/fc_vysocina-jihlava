@@ -55,16 +55,17 @@
   }
 }
 .post-width {
-  background-color: var(--color-bg);
+  background-color: var(--color-light);
   overflow: hidden;
+  color: var(--color-dark);
   a {
     text-decoration-color: transparent;
   }
   a:hover {
     text-decoration-color: inherit;
   }
-  .post-date {
-    color: var(--color-light);
+  .post__date {
+    color: var(--color-primary);
   }
   .h2 {
     margin-bottom: 8px;

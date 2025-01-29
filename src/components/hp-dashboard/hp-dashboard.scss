@@ -1,6 +1,6 @@
 .hp-dashboard {
   &__col {
-    background-color: var(--color-bg);
+    background-color: var(--color-light);
   }
   &__title {
     display: flex;
@@ -11,12 +11,13 @@
       display: block;
     }
     .h2 {
-      color: var(--color-yellow);
+      color: var(--color-primary);
       padding-left: 24px;
     }
   }
   &__content {
     padding: 24px 40px 32px;
+    color: var(--color-dark);
     @include media-breakpoint-down(lg) {
       padding-left: 20px;
       padding-right: 20px;
@@ -24,10 +25,14 @@
   }
   &__date {
     font-size: 20px;
-    color: var(--color-yellow);
+    color: var(--color-primary);
   }
   &__table {
     margin-bottom: 24px;
+    th,
+    td {
+      color: var(--color-dark);
+    }
     td {
       line-height: 23px;
       padding-bottom: 4px;
@@ -41,8 +46,7 @@
         padding-right: 8px;
       }
     }
-    td {
-    }
+
     .team {
       font-weight: 700;
 
