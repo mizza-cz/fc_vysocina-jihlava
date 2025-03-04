@@ -1,0 +1,14 @@
+.table-section {
+  table {
+    td:first-child,
+    th:first-child {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+    td:nth-child(2),
+    th:nth-child(2) {
+      padding-left: 1rem;
+      white-space: nowrap;
+    }
+  }
+}

@@ -1,0 +1,440 @@
+{% extends "@components/base/base.twig" %} {% set title = "14.0_statistics" %}
+{% block main %}
+<div class="base">
+  <div class="base-content">
+    {% include "@components/header/header.twig" %}
+    <main class="main" aria-label="Hlavní obsah">
+      <section class="table-section">
+        <div class="container">
+          <div class="row g-10 mb-10">
+            <div class="col-xl-8">
+              <h1 class="h1 mb-10">Tabulka A-tým 2024/25</h1>
+              <div class="o-content">
+                <table class="styled">
+                  <thead>
+                    <tr>
+                      <th>#</th>
+                      <th>Tým</th>
+                      <th>Z</th>
+                      <th>V</th>
+                      <th>R</th>
+                      <th>P</th>
+                      <th>Skóre</th>
+                      <th>B</th>
+                      <th>RG</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1.</td>
+                      <td class="whitespace-nowrap">
+                        <div class="d-flex align-items-center gap-2">
+                          <img
+                            src="https://fcvysocina.esports.cz/files/logos/FCV-zakladni-PNG.png"
+                            width="24"
+                            height="24"
+                            class="mr-2 inline-block aspect-square h-6 object-contain"
+                            loading="lazy"
+                            alt="FC TRINITY Zlín"
+                          />
+                          FC TRINITY Zlín
+                        </div>
+                      </td>
+                      <td>17</td>
+                      <td>13</td>
+                      <td>4</td>
+                      <td>0</td>
+                      <td>27:5</td>
+                      <td><b>43</b></td>
+                      <td>22</td>
+                    </tr>
+                    <tr>
+                      <td>2.</td>
+                      <td class="whitespace-nowrap">
+                        <div class="d-flex align-items-center gap-2">
+                          <img
+                            src="https://fcvysocina.esports.cz/files/logos/CHR.png"
+                            width="24"
+                            height="24"
+                            class="mr-2 inline-block aspect-square h-6 object-contain"
+                            loading="lazy"
+                            alt="MFK Chrudim"
+                          />
+                          MFK Chrudim
+                        </div>
+                      </td>
+                      <td>17</td>
+                      <td>10</td>
+                      <td>4</td>
+                      <td>3</td>
+                      <td>30:15</td>
+                      <td><b>34</b></td>
+                      <td>15</td>
+                    </tr>
+                    <tr>
+                      <td>3.</td>
+                      <td class="whitespace-nowrap">
+                        <div class="d-flex align-items-center gap-2">
+                          <img
+                            src=""
+                            width="24"
+                            height="24"
+                            class="mr-2 inline-block aspect-square h-6 object-contain"
+                            loading="lazy"
+                            alt=""
+                          />
+                        </div>
+                      </td>
+                      <td>16</td>
+                      <td>7</td>
+                      <td>6</td>
+                      <td>3</td>
+                      <td>17:11</td>
+                      <td><b>27</b></td>
+                      <td>6</td>
+                    </tr>
+                    <tr>
+                      <td>4.</td>
+                      <td class="whitespace-nowrap">
+                        <div class="d-flex align-items-center gap-2">
+                          <img
+                            src="https://fcvysocina.esports.cz/files/logos/ZIZ.png"
+                            width="24"
+                            height="24"
+                            class="mr-2 inline-block aspect-square h-6 object-contain"
+                            loading="lazy"
+                            alt="FK Viktoria Žižkov"
+                          />
+                          FK Viktoria Žižkov
+                        </div>
+                      </td>
+                      <td>17</td>
+                      <td>7</td>
+                      <td>5</td>
+                      <td>5</td>
+                      <td>30:23</td>
+                      <td><b>26</b></td>
+                      <td>7</td>
+                    </tr>
+                    <tr>
+                      <td>5.</td>
+                      <td class="whitespace-nowrap">
+                        <div class="d-flex align-items-center gap-2">
+                          <img
+                            src="https://fcvysocina.esports.cz/files/logos/FCV-zakladni-PNG.png"
+                            width="24"
+                            height="24"
+                            class="mr-2 inline-block aspect-square h-6 object-contain"
+                            loading="lazy"
+                            alt="1.FC Slovácko B"
+                          />
+                          1.FC Slovácko B
+                        </div>
+                      </td>
+                      <td>17</td>
+                      <td>6</td>
+                      <td>5</td>
+                      <td>6</td>
+                      <td>29:22</td>
+                      <td><b>23</b></td>
+                      <td>7</td>
+                    </tr>
+                    <tr>
+                      <td>6.</td>
+                      <td class="whitespace-nowrap">
+                        <div class="d-flex align-items-center gap-2">
+                          <img
+                            src="https://fcvysocina.esports.cz/files/logos/TAB.png"
+                            width="24"
+                            height="24"
+                            class="mr-2 inline-block aspect-square h-6 object-contain"
+                            loading="lazy"
+                            alt="FK Tábor"
+                          />
+                          FK Tábor
+                        </div>
+                      </td>
+                      <td>17</td>
+                      <td>5</td>
+                      <td>7</td>
+                      <td>5</td>
+                      <td>19:18</td>
+                      <td><b>22</b></td>
+                      <td>1</td>
+                    </tr>
+                    <tr>
+                      <td>7.</td>
+                      <td class="whitespace-nowrap">
+                        <div class="d-flex align-items-center gap-2">
+                          <img
+                            src="https://fcvysocina.esports.cz/files/logos/PRO.png"
+                            width="24"
+                            height="24"
+                            class="mr-2 inline-block aspect-square h-6 object-contain"
+                            loading="lazy"
+                            alt="1.SK Prostějov"
+                          />
+                          1.SK Prostějov
+                        </div>
+                      </td>
+                      <td>17</td>
+                      <td>5</td>
+                      <td>7</td>
+                      <td>5</td>
+                      <td>21:27</td>
+                      <td><b>22</b></td>
+                      <td>-6</td>
+                    </tr>
+                    <tr>
+                      <td>8.</td>
+                      <td class="whitespace-nowrap">
+                        <div class="d-flex align-items-center gap-2">
+                          <img
+                            src="https://fcvysocina.esports.cz/files/logos/VLA.png"
+                            width="24"
+                            height="24"
+                            class="mr-2 inline-block aspect-square h-6 object-contain"
+                            loading="lazy"
+                            alt="FC Graffin Vlašim"
+                          />
+                          FC Graffin Vlašim
+                        </div>
+                      </td>
+                      <td>16</td>
+                      <td>4</td>
+                      <td>9</td>
+                      <td>3</td>
+                      <td>28:26</td>
+                      <td><b>21</b></td>
+                      <td>2</td>
+                    </tr>
+                    <tr>
+                      <td>9.</td>
+                      <td class="whitespace-nowrap">
+                        <div class="d-flex align-items-center gap-2">
+                          <img
+                            src="https://fcvysocina.esports.cz/files/logos/logo-sparta.png"
+                            width="24"
+                            height="24"
+                            class="mr-2 inline-block aspect-square h-6 object-contain"
+                            loading="lazy"
+                            alt="AC Sparta Praha"
+                          />
+                          AC Sparta Praha
+                        </div>
+                      </td>
+                      <td>17</td>
+                      <td>5</td>
+                      <td>5</td>
+                      <td>7</td>
+                      <td>28:29</td>
+                      <td><b>20</b></td>
+                      <td>-1</td>
+                    </tr>
+                    <tr>
+                      <td>10.</td>
+                      <td class="whitespace-nowrap">
+                        <div class="d-flex align-items-center gap-2">
+                          <img
+                            src="https://fcvysocina.esports.cz/files/logos/LIS.png"
+                            width="24"
+                            height="24"
+                            class="mr-2 inline-block aspect-square h-6 object-contain"
+                            loading="lazy"
+                            alt="SK Líšeň"
+                          />
+                          SK Líšeň
+                        </div>
+                      </td>
+                      <td>17</td>
+                      <td>4</td>
+                      <td>8</td>
+                      <td>5</td>
+                      <td>17:21</td>
+                      <td><b>20</b></td>
+                      <td>-4</td>
+                    </tr>
+                    <tr>
+                      <td>11.</td>
+                      <td class="whitespace-nowrap">
+                        <div class="d-flex align-items-center gap-2">
+                          <img
+                            src="https://fcvysocina.esports.cz/files/logos/OPA.png"
+                            width="24"
+                            height="24"
+                            class="mr-2 inline-block aspect-square h-6 object-contain"
+                            loading="lazy"
+                            alt="Slezský FC Opava"
+                          />
+                          Slezský FC Opava
+                        </div>
+                      </td>
+                      <td>17</td>
+                      <td>5</td>
+                      <td>5</td>
+                      <td>7</td>
+                      <td>19:26</td>
+                      <td><b>20</b></td>
+                      <td>-7</td>
+                    </tr>
+                    <tr>
+                      <td>12.</td>
+                      <td class="whitespace-nowrap">
+                        <div class="d-flex align-items-center gap-2">
+                          <img
+                            src="https://fcvysocina.esports.cz/files/logos/OLB.png"
+                            width="24"
+                            height="24"
+                            class="mr-2 inline-block aspect-square h-6 object-contain"
+                            loading="lazy"
+                            alt="SK Sigma Olomouc B"
+                          />
+                          SK Sigma Olomouc B
+                        </div>
+                      </td>
+                      <td>17</td>
+                      <td>5</td>
+                      <td>4</td>
+                      <td>8</td>
+                      <td>21:24</td>
+                      <td><b>19</b></td>
+                      <td>-3</td>
+                    </tr>
+                    <tr class="bg-primary-500 font-bold text-white">
+                      <td>13.</td>
+                      <td class="whitespace-nowrap">
+                        <div class="d-flex align-items-center gap-2">
+                          <img
+                            src="https://fcvysocina.esports.cz/files/logos/FCV-zakladni-PNG.png"
+                            width="24"
+                            height="24"
+                            class="mr-2 inline-block aspect-square h-6 object-contain"
+                            loading="lazy"
+                            alt="FC Vysočina Jihlava"
+                          />
+                          FC Vysočina Jihlava
+                        </div>
+                      </td>
+                      <td>17</td>
+                      <td>3</td>
+                      <td>7</td>
+                      <td>7</td>
+                      <td>18:27</td>
+                      <td><b>16</b></td>
+                      <td>-9</td>
+                    </tr>
+                    <tr>
+                      <td>14.</td>
+                      <td class="whitespace-nowrap">
+                        <div class="d-flex align-items-center gap-2">
+                          <img
+                            src=""
+                            width="24"
+                            height="24"
+                            class="mr-2 inline-block aspect-square h-6 object-contain"
+                            loading="lazy"
+                            alt=""
+                          />
+                        </div>
+                      </td>
+                      <td>17</td>
+                      <td>3</td>
+                      <td>7</td>
+                      <td>7</td>
+                      <td>18:29</td>
+                      <td><b>16</b></td>
+                      <td>-11</td>
+                    </tr>
+                    <tr>
+                      <td>15.</td>
+                      <td class="whitespace-nowrap">
+                        <div class="d-flex align-items-center gap-2">
+                          <img
+                            src=""
+                            width="24"
+                            height="24"
+                            class="mr-2 inline-block aspect-square h-6 object-contain"
+                            loading="lazy"
+                            alt=""
+                          />
+                        </div>
+                      </td>
+                      <td>17</td>
+                      <td>4</td>
+                      <td>4</td>
+                      <td>9</td>
+                      <td>19:32</td>
+                      <td><b>16</b></td>
+                      <td>-13</td>
+                    </tr>
+                    <tr>
+                      <td>16.</td>
+                      <td class="whitespace-nowrap">
+                        <div class="d-flex align-items-center gap-2">
+                          <img
+                            src=""
+                            width="24"
+                            height="24"
+                            class="mr-2 inline-block aspect-square h-6 object-contain"
+                            loading="lazy"
+                            alt=""
+                          />
+                        </div>
+                      </td>
+                      <td>17</td>
+                      <td>3</td>
+                      <td>5</td>
+                      <td>9</td>
+                      <td>19:25</td>
+                      <td><b>14</b></td>
+                      <td>-6</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="col-xl-4">
+              <aside>
+                <div class="aside__menu">
+                  <h2 class="h2">klub</h2>
+                  <ul>
+                    <li>
+                      <a href="#">Základní informace</a>
+                    </li>
+                    <li>
+                      <a href="#">Vedení klubu</a>
+                    </li>
+                    <li>
+                      <a href="#" class="active">Hodnoty a principy</a>
+                    </li>
+                    <li>
+                      <a href="#">Sportovní koncepce</a>
+                    </li>
+                    <li>
+                      <a href="#">Nabídka partnerství</a>
+                    </li>
+                  </ul>
+                </div>
+
+                {% include "@components/post/post.twig" %} {% include
+                "@components/post/post.twig" %}
+              </aside>
+            </div>
+          </div>
+
+          <a target="_blank" href="#" class="d-block w-100 mb-10">
+            <img
+              class="w-100"
+              src="https://via.placeholder.com/1400x135"
+              loading="lazy"
+              alt=""
+            />
+          </a>
+        </div>
+      </section>
+    </main>
+  </div>
+  {% include "@components/footer/footer.twig" %}
+</div>
+
+{% endblock %}
